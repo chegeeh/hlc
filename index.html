@@ -277,6 +277,146 @@
   footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;font-size:14.5px;color:rgba(239,228,200,0.75);}
   .foot-bottom{border-top:1px solid var(--line);padding-top:24px;font-size:13px;color:rgba(239,228,200,0.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
   @media (max-width:760px){.foot-grid{grid-template-columns:1fr;}}
+
+  /* TICKER */
+  .ticker-bar{
+    background:var(--wine-deep);
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+    position:relative;
+  }
+  .ticker-bar::before,.ticker-bar::after{
+    content:"";position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none;
+  }
+  .ticker-bar::before{left:0;background:linear-gradient(90deg, var(--wine-deep), transparent);}
+  .ticker-bar::after{right:0;background:linear-gradient(270deg, var(--wine-deep), transparent);}
+  .ticker-track{
+    display:flex;align-items:center;
+    width:max-content;
+    animation:ticker-scroll 34s linear infinite;
+    padding:11px 0;
+  }
+  .ticker-track:hover{animation-play-state:paused;}
+  .ticker-item{
+    display:flex;align-items:center;gap:10px;
+    padding:0 30px;
+    font-size:13px;
+    letter-spacing:0.03em;
+    color:var(--cream);
+    white-space:nowrap;
+    border-right:1px solid rgba(239,228,200,0.25);
+  }
+  .ticker-item .fare-pill{color:var(--gold-light);font-family:'Fraunces',serif;font-size:13.5px;}
+  .ticker-item .dot-sep{color:var(--gold);}
+  @keyframes ticker-scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ticker-track{animation:none;overflow-x:auto;}
+  }
+
+  /* BOOKING */
+  .booking-section{background:var(--charcoal);}
+  .booking-steps{
+    display:flex;justify-content:space-between;
+    margin-bottom:48px;
+    gap:20px;
+    flex-wrap:wrap;
+  }
+  .b-step{display:flex;align-items:center;gap:14px;flex:1;min-width:200px;}
+  .b-step .num{
+    width:38px;height:38px;border-radius:50%;flex:0 0 auto;
+    border:1px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;color:var(--gold-light);font-size:16px;
+  }
+  .b-step.active .num{background:var(--gold);color:var(--black);}
+  .b-step .lbl b{display:block;font-size:14.5px;color:var(--paper);}
+  .b-step .lbl span{font-size:12.5px;color:rgba(239,228,200,0.5);}
+  .b-step-line{flex:1;height:1px;background:var(--line);align-self:center;min-width:20px;margin-top:19px;}
+  @media (max-width:760px){.b-step-line{display:none;}}
+
+  .booking-panel{
+    border:1px solid var(--line);
+    border-radius:2px;
+    background:var(--black);
+    padding:40px;
+  }
+  .b-block{margin-bottom:36px;}
+  .b-block:last-child{margin-bottom:0;}
+  .b-block-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;}
+  .b-block-head .tag{font-family:'Fraunces',serif;color:var(--gold);font-size:14px;}
+  .b-block-head h3{font-size:19px;color:var(--paper);}
+
+  .b-fields{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media (max-width:760px){.b-fields{grid-template-columns:1fr 1fr;}}
+  .b-field label{display:block;font-size:12px;color:rgba(239,228,200,0.55);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em;}
+  .b-field select,.b-field input{
+    width:100%;padding:12px 14px;
+    background:var(--charcoal);
+    border:1px solid var(--line);
+    border-radius:2px;
+    color:var(--paper);
+    font-family:'Work Sans',sans-serif;
+    font-size:14.5px;
+  }
+  .b-field select:focus,.b-field input:focus{outline:2px solid var(--gold);outline-offset:1px;}
+
+  .depart-options{display:flex;gap:14px;flex-wrap:wrap;}
+  .depart-card{
+    flex:1;min-width:200px;
+    border:1px solid var(--line);border-radius:2px;
+    padding:18px 20px;cursor:pointer;
+    background:var(--charcoal);
+  }
+  .depart-card b{display:block;font-family:'Fraunces',serif;color:var(--paper);font-size:17px;}
+  .depart-card span{font-size:13px;color:rgba(239,228,200,0.55);}
+  .depart-card.selected{border-color:var(--gold);background:rgba(201,162,68,0.1);}
+  .depart-card.selected b{color:var(--gold-light);}
+
+  .seat-legend{display:flex;gap:22px;margin-bottom:22px;flex-wrap:wrap;}
+  .seat-legend span{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(239,228,200,0.65);}
+  .seat-legend i{width:16px;height:16px;border-radius:3px;display:inline-block;border:1px solid var(--line);}
+  .leg-avail i{background:var(--charcoal);}
+  .leg-selected i{background:var(--gold);border-color:var(--gold);}
+  .leg-booked i{background:var(--wine);border-color:var(--wine);}
+
+  .seat-cabin{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:10px 14px;
+    max-width:420px;
+    margin:0 auto 28px;
+    padding:20px;
+    border:1px dashed var(--line);
+    border-radius:6px;
+  }
+  .seat{
+    aspect-ratio:1;
+    border-radius:4px;
+    border:1px solid var(--line);
+    background:var(--charcoal);
+    color:rgba(239,228,200,0.6);
+    font-size:11px;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  .seat:hover{border-color:var(--gold);}
+  .seat.selected{background:var(--gold);border-color:var(--gold);color:var(--black);font-weight:600;}
+  .seat.booked{background:var(--wine);border-color:var(--wine);color:rgba(239,228,200,0.5);cursor:not-allowed;}
+  .seat.aisle-gap{border:none;background:transparent;cursor:default;}
+  .seat.driver{background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Fraunces',serif;font-size:10.5px;cursor:default;}
+
+  .b-summary{
+    display:flex;align-items:center;justify-content:space-between;
+    flex-wrap:wrap;gap:20px;
+    border-top:1px solid var(--line);
+    padding-top:28px;
+  }
+  .b-summary .total-lbl{font-size:13px;color:rgba(239,228,200,0.55);text-transform:uppercase;letter-spacing:0.04em;}
+  .b-summary .total-val{font-family:'Fraunces',serif;font-size:30px;color:var(--gold-light);}
+  .b-summary .total-val span{font-size:14px;color:rgba(239,228,200,0.5);font-family:'Work Sans',sans-serif;}
 </style>
 </head>
 <body>
@@ -317,6 +457,126 @@
   </div>
   <div class="hero-media">
     <img src="assets/hero-front.jpg" alt="Habesha Luxury Coach Scania bus, front view, Nairobi to Moyale/Moto Town route">
+  </div>
+</section>
+
+<div class="ticker-bar" aria-label="Route announcements">
+  <div class="ticker-track" id="tickerTrack">
+    <!-- duplicated in JS for a seamless loop -->
+    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> ISIOLO <span class="fare-pill">KES 1,500</span></span>
+    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> MARSABIT <span class="fare-pill">KES 2,000</span></span>
+    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> SOLOLO <span class="fare-pill">KES 2,200</span></span>
+    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> MOYALE <span class="fare-pill">KES 2,500</span></span>
+    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> DILLA <span class="fare-pill">KES 5,500</span></span>
+    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> HAWASSA <span class="fare-pill">KES 6,500</span></span>
+    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> ADDIS ABABA <span class="fare-pill">KES 15,000</span></span>
+    <span class="ticker-item">ISIOLO <span class="dot-sep">→</span> MARSABIT <span class="fare-pill">KES 1,000</span></span>
+    <span class="ticker-item">MARSABIT <span class="dot-sep">→</span> SOLOLO <span class="fare-pill">KES 700</span></span>
+    <span class="ticker-item">SOLOLO <span class="dot-sep">→</span> MOYALE <span class="fare-pill">KES 700</span></span>
+    <span class="ticker-item">MOYALE <span class="dot-sep">→</span> DILLA <span class="fare-pill">KES 3,000</span></span>
+    <span class="ticker-item">DILLA <span class="dot-sep">→</span> HAWASSA <span class="fare-pill">KES 1,500</span></span>
+    <span class="ticker-item">HAWASSA <span class="dot-sep">→</span> ADDIS ABABA <span class="fare-pill">KES 1,500</span></span>
+    <span class="ticker-item">Daily departures · 7:00 PM · Book on WhatsApp</span>
+  </div>
+</div>
+
+<section id="booking" class="booking-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">BOOK &amp; RESERVE</div>
+      <h2>Your ticket, in three steps.</h2>
+      <p>Pick your route, choose a departure, then your seat. We'll draft it all as a WhatsApp message — you just hit send.</p>
+    </div>
+
+    <div class="booking-steps">
+      <div class="b-step active"><div class="num">1</div><div class="lbl"><b>Route &amp; date</b><span>Where you're boarding and alighting</span></div></div>
+      <div class="b-step-line"></div>
+      <div class="b-step active"><div class="num">2</div><div class="lbl"><b>Departure</b><span>Confirm the day's coach</span></div></div>
+      <div class="b-step-line"></div>
+      <div class="b-step active"><div class="num">3</div><div class="lbl"><b>Choose your seat</b><span>Pick from the cabin map</span></div></div>
+    </div>
+
+    <div class="booking-panel">
+
+      <div class="b-block">
+        <div class="b-block-head"><span class="tag">01</span><h3>Route &amp; date</h3></div>
+        <div class="b-fields">
+          <div class="b-field">
+            <label for="bFrom">From</label>
+            <select id="bFrom">
+              <option value="Nairobi">Nairobi</option>
+              <option value="Isiolo">Isiolo</option>
+              <option value="Marsabit">Marsabit</option>
+              <option value="Sololo">Sololo</option>
+              <option value="Moyale">Moyale</option>
+              <option value="Dilla">Dilla</option>
+              <option value="Hawassa">Hawassa</option>
+            </select>
+          </div>
+          <div class="b-field">
+            <label for="bTo">To</label>
+            <select id="bTo">
+              <option value="Isiolo">Isiolo</option>
+              <option value="Marsabit">Marsabit</option>
+              <option value="Sololo">Sololo</option>
+              <option value="Moyale">Moyale</option>
+              <option value="Dilla">Dilla</option>
+              <option value="Hawassa">Hawassa</option>
+              <option value="Addis Ababa" selected>Addis Ababa</option>
+            </select>
+          </div>
+          <div class="b-field">
+            <label for="bDate">Travel date</label>
+            <input type="date" id="bDate">
+          </div>
+          <div class="b-field">
+            <label for="bPax">Passengers</label>
+            <select id="bPax">
+              <option>1 passenger</option>
+              <option>2 passengers</option>
+              <option>3 passengers</option>
+              <option>4 passengers</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-block">
+        <div class="b-block-head"><span class="tag">02</span><h3>Departure</h3></div>
+        <div class="depart-options" id="departOptions">
+          <div class="depart-card selected" data-time="7:00 PM">
+            <b>7:00 PM</b><span>Evening departure · daily</span>
+          </div>
+          <div class="depart-card" data-time="6:00 AM">
+            <b>6:00 AM</b><span>Morning departure · Nairobi–Isiolo &amp; Marsabit only</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-block">
+        <div class="b-block-head"><span class="tag">03</span><h3>Choose your seat(s)</h3></div>
+        <div class="seat-legend">
+          <span class="leg-avail"><i></i> Available</span>
+          <span class="leg-selected"><i></i> Selected</span>
+          <span class="leg-booked"><i></i> Booked</span>
+        </div>
+        <div class="seat-cabin" id="seatCabin"><!-- seats injected by JS --></div>
+        <div style="text-align:center;font-size:12.5px;color:rgba(239,228,200,0.45);margin-top:-14px;margin-bottom:8px;">Tap a seat to select — up to 4 per booking</div>
+      </div>
+
+      <div class="b-summary">
+        <div>
+          <div class="total-lbl">Selected route</div>
+          <div class="total-val" id="summaryRoute" style="font-size:18px;">Nairobi → Addis Ababa</div>
+        </div>
+        <div>
+          <div class="total-lbl">Total fare</div>
+          <div class="total-val"><span id="summaryTotal">KES 0</span></div>
+        </div>
+        <a class="btn btn-gold" id="whatsBookBtn" href="https://wa.me/254700000000" target="_blank" rel="noopener">Complete on WhatsApp</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -558,6 +818,141 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // --- Ticker: duplicate items once for a seamless scroll loop ---
+  (function(){
+    var track = document.getElementById('tickerTrack');
+    track.innerHTML += track.innerHTML;
+  })();
+
+  // --- Booking widget ---
+  (function(){
+    var fares = {
+      "Nairobi|Isiolo": 1500, "Nairobi|Marsabit": 2000, "Nairobi|Sololo": 2200,
+      "Nairobi|Moyale": 2500, "Nairobi|Dilla": 5500, "Nairobi|Hawassa": 6500,
+      "Nairobi|Addis Ababa": 15000, "Isiolo|Marsabit": 1000, "Marsabit|Sololo": 700,
+      "Sololo|Moyale": 700, "Moyale|Dilla": 3000, "Dilla|Hawassa": 1500,
+      "Hawassa|Addis Ababa": 1500
+    };
+    var stopOrder = ["Nairobi","Isiolo","Marsabit","Sololo","Moyale","Dilla","Hawassa","Addis Ababa"];
+
+    function fareFor(from, to){
+      if(from === to) return null;
+      var direct = fares[from + "|" + to];
+      if(direct) return direct;
+      // sum consecutive trunk legs along the corridor when no direct fare is listed
+      var i = stopOrder.indexOf(from), j = stopOrder.indexOf(to);
+      if(i === -1 || j === -1 || i >= j) return null;
+      var total = 0, ok = true;
+      for(var k = i; k < j; k++){
+        var leg = fares[stopOrder[k] + "|" + stopOrder[k+1]];
+        if(!leg){ ok = false; break; }
+        total += leg;
+      }
+      return ok ? total : null;
+    }
+
+    var bFrom = document.getElementById('bFrom');
+    var bTo = document.getElementById('bTo');
+    var bPax = document.getElementById('bPax');
+    var summaryRoute = document.getElementById('summaryRoute');
+    var summaryTotal = document.getElementById('summaryTotal');
+    var whatsBtn = document.getElementById('whatsBookBtn');
+    var seatCabin = document.getElementById('seatCabin');
+    var departOptions = document.getElementById('departOptions');
+
+    var selectedSeats = [];
+    var selectedTime = "7:00 PM";
+    var bookedSeats = ["A2","B4","C1","D3","E2"];
+    var maxSeats = 4;
+
+    function buildSeats(){
+      seatCabin.innerHTML = "";
+      var rowLetters = ["A","B","C","D","E","F","G","H","I","J"];
+      rowLetters.forEach(function(row){
+        for(var col = 1; col <= 5; col++){
+          if(col === 3){
+            var gap = document.createElement('div');
+            gap.className = "seat aisle-gap";
+            seatCabin.appendChild(gap);
+            continue;
+          }
+          if(row === "J" && col === 5){
+            var removed = document.createElement('div');
+            removed.className = "seat aisle-gap";
+            seatCabin.appendChild(removed);
+            continue;
+          }
+          var id = row + col;
+          var el = document.createElement('div');
+          el.className = "seat";
+          el.textContent = id;
+          el.dataset.seat = id;
+          if(bookedSeats.indexOf(id) !== -1){
+            el.classList.add('booked');
+          } else {
+            el.addEventListener('click', function(){
+              var seatId = this.dataset.seat;
+              var idx = selectedSeats.indexOf(seatId);
+              if(idx !== -1){
+                selectedSeats.splice(idx, 1);
+                this.classList.remove('selected');
+              } else {
+                if(selectedSeats.length >= maxSeats) return;
+                selectedSeats.push(seatId);
+                this.classList.add('selected');
+              }
+              updateSummary();
+            });
+          }
+          seatCabin.appendChild(el);
+        }
+      });
+      // driver marker
+      var drv = document.createElement('div');
+      drv.className = "seat driver";
+      drv.textContent = "DRV";
+      seatCabin.insertBefore(drv, seatCabin.children[2]);
+    }
+
+    function updateSummary(){
+      var from = bFrom.value, to = bTo.value;
+      var fare = fareFor(from, to);
+      summaryRoute.textContent = from + " → " + to;
+      if(fare === null){
+        summaryTotal.textContent = "Confirm on WhatsApp";
+      } else {
+        var seatCount = Math.max(selectedSeats.length, 1);
+        summaryTotal.textContent = "KES " + (fare * seatCount).toLocaleString();
+      }
+
+      var pax = bPax.value;
+      var date = document.getElementById('bDate').value || "date to be confirmed";
+      var seatsText = selectedSeats.length ? selectedSeats.join(", ") : "to be assigned";
+      var msg = "Hi Habesha Luxury Coach, I'd like to book " + from + " to " + to +
+        " on " + date + ", departing " + selectedTime + ". Passengers: " + pax +
+        ". Seats: " + seatsText + ".";
+      whatsBtn.href = "https://wa.me/254700000000?text=" + encodeURIComponent(msg);
+    }
+
+    departOptions.addEventListener('click', function(e){
+      var card = e.target.closest('.depart-card');
+      if(!card) return;
+      Array.from(departOptions.children).forEach(function(c){ c.classList.remove('selected'); });
+      card.classList.add('selected');
+      selectedTime = card.dataset.time;
+      updateSummary();
+    });
+
+    [bFrom, bTo, bPax, document.getElementById('bDate')].forEach(function(el){
+      el.addEventListener('change', updateSummary);
+    });
+
+    buildSeats();
+    updateSummary();
+  })();
+</script>
 
 </body>
 </html>
