@@ -205,14 +205,21 @@
   @media (max-width:520px){.amen-grid{grid-template-columns:1fr;}}
 
   .amenity-photo{
-    margin-top:56px;border-radius:2px;overflow:hidden;border:1px solid var(--line);
-    display:grid;grid-template-columns:1fr 1fr;
+    margin-top:56px;
   }
+  .amenity-photo.two-cabins{
+    display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  }
+  .cabin-block{
+    border-radius:2px;overflow:hidden;border:1px solid var(--line);
+    display:grid;grid-template-rows:220px auto;
+  }
+  .cabin-block img{width:100%;height:100%;object-fit:cover;}
   .amenity-photo img{height:100%;object-fit:cover;}
-  .amenity-photo .note{padding:36px;background:var(--charcoal);display:flex;flex-direction:column;justify-content:center;}
-  .amenity-photo .note b{font-family:'Fraunces',serif;font-size:22px;color:var(--gold-light);}
-  .amenity-photo .note p{color:rgba(239,228,200,0.68);margin-top:12px;font-size:15px;}
-  @media (max-width:760px){.amenity-photo{grid-template-columns:1fr;}}
+  .amenity-photo .note{padding:26px 28px;background:var(--charcoal);display:flex;flex-direction:column;justify-content:center;}
+  .amenity-photo .note b{font-family:'Fraunces',serif;font-size:20px;color:var(--gold-light);}
+  .amenity-photo .note p{color:rgba(239,228,200,0.68);margin-top:10px;font-size:14.5px;}
+  @media (max-width:760px){.amenity-photo.two-cabins{grid-template-columns:1fr;}}
 
   /* FARES TABLE */
   .fares-wrap{border:1px solid var(--line);border-radius:2px;overflow:hidden;}
@@ -262,7 +269,10 @@
 
   /* CONTACT / CTA */
   .cta-band{
-    background:linear-gradient(120deg, var(--wine-deep), var(--wine) 55%, var(--wine-deep));
+    position:relative;
+    background:
+      linear-gradient(120deg, rgba(89,19,39,0.93), rgba(122,27,52,0.88) 55%, rgba(89,19,39,0.93)),
+      url('assets/assets_1001472473.jpg') center 30% / cover no-repeat;
     padding:70px 0;
     border-bottom:1px solid var(--line);
   }
@@ -456,7 +466,7 @@
     </div>
   </div>
   <div class="hero-media">
-    <img src="assets/hero-front.jpg" alt="Habesha Luxury Coach Scania bus, front view, Nairobi to Moyale/Moto Town route">
+    <img src="assets/1001472478.jpg" alt="Habesha Luxury Coach Scania bus, front view, Nairobi to Moyale/Moto Town route">
   </div>
 </section>
 
@@ -604,15 +614,15 @@
     </div>
     <div class="fleet-grid">
       <div class="fleet-card tall">
-        <img src="assets/fleet-front-side.jpg" alt="Habesha Luxury Coach bus, three-quarter front view, gold and black livery">
+        <img src="assets/1001472471.jpg" alt="Habesha Luxury Coach bus, three-quarter front view, gold and black livery">
         <div class="cap"><b>Gold Class, on the yard</b>Fresh livery, Nairobi</div>
       </div>
       <div class="fleet-card">
-        <img src="assets/fleet-side.jpg" alt="Side profile of Habesha Luxury Coach bus showing gold and maroon chevron livery">
+        <img src="assets/1001472475.jpg" alt="Side profile of Habesha Luxury Coach bus showing gold and maroon chevron livery">
         <div class="cap"><b>Side profile</b>Habesha script, chevron detail</div>
       </div>
       <div class="fleet-card">
-        <img src="assets/fleet-rear.jpg" alt="Rear view of Habesha Luxury Coach bus with Kenya and Ethiopia flag crest">
+        <img src="assets/1001472476.jpg" alt="Rear view of Habesha Luxury Coach bus with Kenya and Ethiopia flag crest">
         <div class="cap"><b>The tailgate crest</b>Kenya &amp; Ethiopia, one corridor</div>
       </div>
     </div>
@@ -635,11 +645,20 @@
       <div class="amen"><div class="ic">✓</div><h3>Guided border crossing</h3><p>Crews who handle the Moyale paperwork daily.</p></div>
     </div>
 
-    <div class="amenity-photo">
-      <img src="assets/interior-vip.jpg" alt="VIP coach interior with cream leather seats and personal entertainment screens">
-      <div class="note">
-        <b>VIP Class cabin</b>
-        <p>Cream leather seating, a personal screen at every headrest, and a crew ready with your bags before you're off the step.</p>
+    <div class="amenity-photo two-cabins">
+      <div class="cabin-block">
+        <img src="assets/1001472481.jpg" alt="VIP coach interior with cream leather seats and personal entertainment screens">
+        <div class="note">
+          <b>VIP Class cabin</b>
+          <p>Cream leather seating, a personal screen at every headrest, and a crew ready with your bags before you're off the step.</p>
+        </div>
+      </div>
+      <div class="cabin-block">
+        <img src="assets/1001472477.jpg" alt="Standard VIP coach interior with reclining seats, red carpet aisle and curtains">
+        <div class="note">
+          <b>Gold Class cabin</b>
+          <p>Wide reclining seats, a red-carpet aisle and mood lighting for the long stretch between towns.</p>
+        </div>
       </div>
     </div>
   </div>
