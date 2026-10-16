@@ -1,978 +1,324 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Habesha Luxury Coach | Nairobi — Addis Ababa</title>
-  
+<title>Habesha Luxury Coach | Nairobi to Addis Ababa</title>
 <meta name="description" content="Habesha Luxury Coach: daily premium coach service from Nairobi to Isiolo, Marsabit, Sololo, Moyale, Dilla, Hawassa and Addis Ababa. Reserve your seat on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --black:#141110;
-    --charcoal:#221d1a;
-    --gold:#c9a244;
-    --gold-light:#e6cd8a;
-    --wine:#7a1b34;
-    --wine-deep:#591327;
-    --cream:#efe4c8;
-    --paper:#f6f0e1;
-    --sky:#2e5eaa;
-    --chevron:#c81e2e;
-    --line: rgba(239,228,200,0.16);
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--black);
-    color:var(--paper);
-    font-family:'Work Sans', sans-serif;
-    font-size:16px;
-    line-height:1.55;
-  }
-  h1,h2,h3,.display{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    margin:0;
-    letter-spacing:-0.01em;
-  }
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:1160px;margin:0 auto;padding:0 28px;}
-  .btn{
-    display:inline-flex;align-items:center;gap:10px;
-    padding:14px 26px;
-    border-radius:2px;
-    font-weight:600;
-    font-size:15px;
-    border:1px solid transparent;
-    cursor:pointer;
-  }
-  .btn-gold{background:var(--gold);color:var(--black);}
-  .btn-gold:hover{background:var(--gold-light);}
-  .btn-outline{border-color:rgba(239,228,200,0.4);color:var(--paper);}
-  .btn-outline:hover{border-color:var(--gold);color:var(--gold-light);}
-
-  /* NAV */
-  header{
-    position:sticky;top:0;z-index:50;
-    background:rgba(20,17,16,0.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
-  }
-  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
-  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--gold-light);}
-  .brand .mark{width:34px;height:34px;border-radius:50%;background:conic-gradient(from 200deg, var(--gold), var(--wine), var(--gold));display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;color:var(--black);font-weight:700;font-size:16px;}
-  .navlinks{display:flex;gap:32px;font-size:14.5px;color:rgba(239,228,200,0.85);}
-  .navlinks a:hover{color:var(--gold-light);}
-  .nav-cta{display:flex;align-items:center;gap:18px;}
-  @media (max-width:860px){.navlinks{display:none;}}
-
-  /* HERO */
-  .hero{
-    position:relative;
-    display:grid;
-    grid-template-columns:1.05fr 0.95fr;
-    align-items:stretch;
-    min-height:640px;
-    overflow:hidden;
-    border-bottom:1px solid var(--line);
-  }
-  .hero-copy{
-    padding:96px 48px 96px clamp(24px,5vw,64px);
-    display:flex;flex-direction:column;justify-content:center;
-    position:relative;z-index:2;
-    background:
-      radial-gradient(1000px 500px at -10% 20%, rgba(122,27,52,0.35), transparent 60%),
-      var(--black);
-  }
-  .eyebrow{
-    color:var(--gold);
-    font-size:13.5px;
-    letter-spacing:0.03em;
-    margin-bottom:22px;
-    display:flex;align-items:center;gap:10px;
-  }
-  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);display:inline-block;}
-  .hero h1{
-    font-size:clamp(38px,4.6vw,60px);
-    line-height:1.04;
-    color:var(--paper);
-    max-width:11.5ch;
-  }
-  .hero h1 em{font-style:italic;color:var(--gold-light);}
-  .hero p{
-    margin-top:26px;
-    max-width:46ch;
-    color:rgba(239,228,200,0.78);
-    font-size:17px;
-  }
-  .hero-ctas{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap;}
-  .hero-stats{
-    margin-top:64px;
-    display:flex;gap:42px;
-    flex-wrap:wrap;
-  }
-  .stat b{font-family:'Fraunces',serif;font-size:28px;color:var(--gold-light);display:block;}
-  .stat span{font-size:13px;color:rgba(239,228,200,0.6);}
-  .hero-media{
-    position:relative;
-    background:#0c0a09;
-  }
-  .hero-media img{
-    width:100%;height:100%;object-fit:cover;
-    clip-path:polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  .hero-media::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg, rgba(20,17,16,0) 55%, rgba(20,17,16,0.75) 100%);
-    clip-path:polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  @media (max-width:900px){
-    .hero{grid-template-columns:1fr;min-height:auto;}
-    .hero-media{height:320px;order:-1;}
-    .hero-media img{clip-path:none;}
-    .hero-media::after{clip-path:none;}
-    .hero-copy{padding:56px 24px;}
-  }
-
-  section{padding:100px 0;border-bottom:1px solid var(--line);}
-  .section-head{max-width:640px;margin-bottom:56px;}
-  .section-head .eyebrow{margin-bottom:16px;}
-  .section-head h2{font-size:clamp(28px,3vw,38px);color:var(--paper);}
-  .section-head p{margin-top:16px;color:rgba(239,228,200,0.68);font-size:16px;}
-
-  /* ROUTE STRIP */
-  .route-strip{
-    background:var(--charcoal);
-    padding:60px 0;
-    border-bottom:1px solid var(--line);
-  }
-  .route-track{
-    display:flex;align-items:flex-start;
-    overflow-x:auto;
-    gap:0;
-    padding-bottom:8px;
-  }
-  .route-stop{
-    flex:0 0 auto;min-width:150px;
-    padding-right:28px;position:relative;
-  }
-  .route-stop .dot{
-    width:12px;height:12px;border-radius:50%;
-    background:var(--gold);border:2px solid var(--black);
-    margin-bottom:14px;position:relative;z-index:2;
-  }
-  .route-stop.border .dot{background:var(--chevron);}
-  .route-stop::after{
-    content:"";position:absolute;top:5px;left:12px;right:-16px;height:2px;
-    background:linear-gradient(90deg, var(--gold), rgba(201,162,68,0.2));
-  }
-  .route-stop:last-child::after{display:none;}
-  .route-stop b{display:block;font-family:'Fraunces',serif;font-size:19px;color:var(--paper);}
-  .route-stop .km{font-size:12.5px;color:rgba(239,228,200,0.55);margin-top:4px;}
-  .route-stop .tag{font-size:11.5px;text-transform:uppercase;letter-spacing:0.06em;color:var(--gold);margin-top:6px;}
-
-  /* FLEET */
-  .fleet-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;}
-  .fleet-grid .tall{grid-row:span 2;}
-  .fleet-card{
-    position:relative;border-radius:2px;overflow:hidden;
-    border:1px solid var(--line);
-    background:var(--charcoal);
-  }
-  .fleet-card img{width:100%;height:100%;object-fit:cover;}
-  .fleet-card .cap{
-    position:absolute;left:0;right:0;bottom:0;
-    padding:20px 22px;
-    background:linear-gradient(0deg, rgba(14,12,11,0.92), transparent);
-    font-size:14.5px;color:var(--cream);
-  }
-  .fleet-card .cap b{display:block;font-family:'Fraunces',serif;font-size:18px;color:var(--gold-light);font-weight:600;}
-  @media (max-width:760px){
-    .fleet-grid{grid-template-columns:1fr;}
-    .fleet-grid .tall{grid-row:auto;}
-  }
-
-  /* AMENITIES */
-  .amen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
-  .amen{background:var(--black);padding:34px 30px;}
-  .amen .ic{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:16px;margin-bottom:20px;}
-  .amen h3{font-size:18px;color:var(--paper);margin-bottom:8px;}
-  .amen p{font-size:14.5px;color:rgba(239,228,200,0.62);margin:0;}
-  @media (max-width:760px){.amen-grid{grid-template-columns:1fr 1fr;}}
-  @media (max-width:520px){.amen-grid{grid-template-columns:1fr;}}
-
-  .amenity-photo{
-    margin-top:56px;
-  }
-  .amenity-photo.two-cabins{
-    display:grid;grid-template-columns:1fr 1fr;gap:24px;
-  }
-  .cabin-block{
-    border-radius:2px;overflow:hidden;border:1px solid var(--line);
-    display:grid;grid-template-rows:220px auto;
-  }
-  .cabin-block img{width:100%;height:100%;object-fit:cover;}
-  .amenity-photo img{height:100%;object-fit:cover;}
-  .amenity-photo .note{padding:26px 28px;background:var(--charcoal);display:flex;flex-direction:column;justify-content:center;}
-  .amenity-photo .note b{font-family:'Fraunces',serif;font-size:20px;color:var(--gold-light);}
-  .amenity-photo .note p{color:rgba(239,228,200,0.68);margin-top:10px;font-size:14.5px;}
-  @media (max-width:760px){.amenity-photo.two-cabins{grid-template-columns:1fr;}}
-
-  /* FARES TABLE */
-  .fares-wrap{border:1px solid var(--line);border-radius:2px;overflow:hidden;}
-  table{width:100%;border-collapse:collapse;font-size:15px;}
-  thead th{
-    text-align:left;padding:16px 22px;
-    background:var(--wine-deep);
-    color:var(--gold-light);
-    font-family:'Fraunces',serif;font-weight:600;font-size:15px;
-    border-bottom:1px solid var(--line);
-  }
-  tbody td{padding:16px 22px;border-bottom:1px solid var(--line);color:rgba(239,228,200,0.85);}
-  tbody tr:last-child td{border-bottom:none;}
-  tbody tr:hover{background:rgba(201,162,68,0.06);}
-  tbody tr.trunk td{color:var(--paper);font-weight:500;}
-  .fare{color:var(--gold-light);font-family:'Fraunces',serif;font-size:16px;}
-  .route-name{display:flex;align-items:center;gap:10px;}
-  .route-name .arrow{color:var(--gold);}
-  td.book a{font-size:13.5px;color:var(--gold);border-bottom:1px solid rgba(201,162,68,0.4);}
-  td.book a:hover{color:var(--gold-light);}
-  .fares-note{margin-top:20px;font-size:13.5px;color:rgba(239,228,200,0.55);}
-
-  .fares-tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap;}
-  .fares-tab{
-    padding:10px 18px;font-size:13.5px;border:1px solid var(--line);border-radius:20px;
-    color:rgba(239,228,200,0.7);cursor:pointer;
-  }
-  .fares-tab.active{background:var(--gold);color:var(--black);border-color:var(--gold);font-weight:600;}
-
-  /* CLASSES */
-  .class-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .class-card{
-    border:1px solid var(--line);padding:34px 28px;border-radius:2px;
-    background:var(--charcoal);
-    display:flex;flex-direction:column;
-  }
-  .class-card.feat{border-color:var(--gold);background:linear-gradient(160deg, rgba(201,162,68,0.1), var(--charcoal) 60%);}
-  .class-tag{font-size:12px;letter-spacing:0.05em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
-  .class-card h3{font-size:24px;color:var(--paper);}
-  .class-card .seats{font-size:13.5px;color:rgba(239,228,200,0.55);margin-top:6px;margin-bottom:20px;}
-  .class-card ul{list-style:none;margin:0 0 24px;padding:0;font-size:14.5px;color:rgba(239,228,200,0.78);}
-  .class-card li{padding:7px 0;border-top:1px solid var(--line);}
-  .class-card li:first-child{border-top:none;}
-  .class-card .price{margin-top:auto;font-family:'Fraunces',serif;font-size:26px;color:var(--gold-light);}
-  .class-card .price span{font-size:13px;color:rgba(239,228,200,0.5);font-family:'Work Sans',sans-serif;}
-  @media (max-width:860px){.class-grid{grid-template-columns:1fr;}}
-
-  /* CONTACT / CTA */
-  .cta-band{
-    position:relative;
-    background:
-      linear-gradient(120deg, rgba(89,19,39,0.93), rgba(122,27,52,0.88) 55%, rgba(89,19,39,0.93)),
-      url('assets/assets_1001472473.jpg') center 30% / cover no-repeat;
-    padding:70px 0;
-    border-bottom:1px solid var(--line);
-  }
-  .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;}
-  .cta-inner h2{color:var(--cream);font-size:clamp(24px,3vw,32px);max-width:20ch;}
-  .cta-inner .btn-gold{background:var(--gold-light);}
-
-  footer{padding:64px 0 36px;}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:48px;}
-  .foot-brand p{color:rgba(239,228,200,0.6);font-size:14.5px;margin-top:14px;max-width:34ch;}
-  footer h4{font-size:13px;text-transform:uppercase;letter-spacing:0.05em;color:var(--gold);margin-bottom:16px;}
-  footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;font-size:14.5px;color:rgba(239,228,200,0.75);}
-  .foot-bottom{border-top:1px solid var(--line);padding-top:24px;font-size:13px;color:rgba(239,228,200,0.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
-  @media (max-width:760px){.foot-grid{grid-template-columns:1fr;}}
-
-  /* TICKER */
-  .ticker-bar{
-    background:var(--wine-deep);
-    border-bottom:1px solid var(--line);
-    overflow:hidden;
-    position:relative;
-  }
-  .ticker-bar::before,.ticker-bar::after{
-    content:"";position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none;
-  }
-  .ticker-bar::before{left:0;background:linear-gradient(90deg, var(--wine-deep), transparent);}
-  .ticker-bar::after{right:0;background:linear-gradient(270deg, var(--wine-deep), transparent);}
-  .ticker-track{
-    display:flex;align-items:center;
-    width:max-content;
-    animation:ticker-scroll 34s linear infinite;
-    padding:11px 0;
-  }
-  .ticker-track:hover{animation-play-state:paused;}
-  .ticker-item{
-    display:flex;align-items:center;gap:10px;
-    padding:0 30px;
-    font-size:13px;
-    letter-spacing:0.03em;
-    color:var(--cream);
-    white-space:nowrap;
-    border-right:1px solid rgba(239,228,200,0.25);
-  }
-  .ticker-item .fare-pill{color:var(--gold-light);font-family:'Fraunces',serif;font-size:13.5px;}
-  .ticker-item .dot-sep{color:var(--gold);}
-  @keyframes ticker-scroll{
-    from{transform:translateX(0);}
-    to{transform:translateX(-50%);}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .ticker-track{animation:none;overflow-x:auto;}
-  }
-
-  /* BOOKING */
-  .booking-section{background:var(--charcoal);}
-  .booking-steps{
-    display:flex;justify-content:space-between;
-    margin-bottom:48px;
-    gap:20px;
-    flex-wrap:wrap;
-  }
-  .b-step{display:flex;align-items:center;gap:14px;flex:1;min-width:200px;}
-  .b-step .num{
-    width:38px;height:38px;border-radius:50%;flex:0 0 auto;
-    border:1px solid var(--gold);
-    display:flex;align-items:center;justify-content:center;
-    font-family:'Fraunces',serif;color:var(--gold-light);font-size:16px;
-  }
-  .b-step.active .num{background:var(--gold);color:var(--black);}
-  .b-step .lbl b{display:block;font-size:14.5px;color:var(--paper);}
-  .b-step .lbl span{font-size:12.5px;color:rgba(239,228,200,0.5);}
-  .b-step-line{flex:1;height:1px;background:var(--line);align-self:center;min-width:20px;margin-top:19px;}
-  @media (max-width:760px){.b-step-line{display:none;}}
-
-  .booking-panel{
-    border:1px solid var(--line);
-    border-radius:2px;
-    background:var(--black);
-    padding:40px;
-  }
-  .b-block{margin-bottom:36px;}
-  .b-block:last-child{margin-bottom:0;}
-  .b-block-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;}
-  .b-block-head .tag{font-family:'Fraunces',serif;color:var(--gold);font-size:14px;}
-  .b-block-head h3{font-size:19px;color:var(--paper);}
-
-  .b-fields{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-  @media (max-width:760px){.b-fields{grid-template-columns:1fr 1fr;}}
-  .b-field label{display:block;font-size:12px;color:rgba(239,228,200,0.55);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em;}
-  .b-field select,.b-field input{
-    width:100%;padding:12px 14px;
-    background:var(--charcoal);
-    border:1px solid var(--line);
-    border-radius:2px;
-    color:var(--paper);
-    font-family:'Work Sans',sans-serif;
-    font-size:14.5px;
-  }
-  .b-field select:focus,.b-field input:focus{outline:2px solid var(--gold);outline-offset:1px;}
-
-  .depart-options{display:flex;gap:14px;flex-wrap:wrap;}
-  .depart-card{
-    flex:1;min-width:200px;
-    border:1px solid var(--line);border-radius:2px;
-    padding:18px 20px;cursor:pointer;
-    background:var(--charcoal);
-  }
-  .depart-card b{display:block;font-family:'Fraunces',serif;color:var(--paper);font-size:17px;}
-  .depart-card span{font-size:13px;color:rgba(239,228,200,0.55);}
-  .depart-card.selected{border-color:var(--gold);background:rgba(201,162,68,0.1);}
-  .depart-card.selected b{color:var(--gold-light);}
-
-  .seat-legend{display:flex;gap:22px;margin-bottom:22px;flex-wrap:wrap;}
-  .seat-legend span{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(239,228,200,0.65);}
-  .seat-legend i{width:16px;height:16px;border-radius:3px;display:inline-block;border:1px solid var(--line);}
-  .leg-avail i{background:var(--charcoal);}
-  .leg-selected i{background:var(--gold);border-color:var(--gold);}
-  .leg-booked i{background:var(--wine);border-color:var(--wine);}
-
-  .seat-cabin{
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    gap:10px 14px;
-    max-width:420px;
-    margin:0 auto 28px;
-    padding:20px;
-    border:1px dashed var(--line);
-    border-radius:6px;
-  }
-  .seat{
-    aspect-ratio:1;
-    border-radius:4px;
-    border:1px solid var(--line);
-    background:var(--charcoal);
-    color:rgba(239,228,200,0.6);
-    font-size:11px;
-    display:flex;align-items:center;justify-content:center;
-    cursor:pointer;
-  }
-  .seat:hover{border-color:var(--gold);}
-  .seat.selected{background:var(--gold);border-color:var(--gold);color:var(--black);font-weight:600;}
-  .seat.booked{background:var(--wine);border-color:var(--wine);color:rgba(239,228,200,0.5);cursor:not-allowed;}
-  .seat.aisle-gap{border:none;background:transparent;cursor:default;}
-  .seat.driver{background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Fraunces',serif;font-size:10.5px;cursor:default;}
-
-  .b-summary{
-    display:flex;align-items:center;justify-content:space-between;
-    flex-wrap:wrap;gap:20px;
-    border-top:1px solid var(--line);
-    padding-top:28px;
-  }
-  .b-summary .total-lbl{font-size:13px;color:rgba(239,228,200,0.55);text-transform:uppercase;letter-spacing:0.04em;}
-  .b-summary .total-val{font-family:'Fraunces',serif;font-size:30px;color:var(--gold-light);}
-  .b-summary .total-val span{font-size:14px;color:rgba(239,228,200,0.5);font-family:'Work Sans',sans-serif;}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Tailwind Play CDN: fine for launch; for production, compile Tailwind and ship a static CSS file -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{
+  colors:{ink:'#050505',char:'#0f0f0f',wine:{DEFAULT:'#1a1610',deep:'#0a0908'},gold:{DEFAULT:'#d4b068',light:'#ecd9a6'},cream:'#ece8df'},
+  fontFamily:{display:['Fraunces','serif'],sans:['"Work Sans"','system-ui','sans-serif']},
+  keyframes:{ticker:{to:{transform:'translateX(-50%)'}}},
+  animation:{ticker:'ticker 40s linear infinite'}
+}}}
+</script>
 </head>
-<body>
+<body class="bg-ink font-sans text-cream/90 antialiased">
 
-<header>
-  <div class="wrap">
-    <nav>
-      <a href="#top" class="brand"><span class="mark">H</span> Habesha Luxury Coach</a>
-      <div class="navlinks">
-        <a href="#fleet">Fleet</a>
-        <a href="#amenities">Onboard</a>
-        <a href="#fares">Routes &amp; Fares</a>
-        <a href="#classes">Coach Classes</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="nav-cta">
-        <a class="btn btn-gold" href="https://wa.me/254755918468" target="_blank" rel="noopener">Book on WhatsApp</a>
-      </div>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-ink/80 backdrop-blur-md">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
+    <a href="#top" class="flex items-center gap-3 font-display text-lg font-semibold text-gold-light">
+      <span class="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-gold-light to-gold text-ink">H</span>
+      <span class="hidden sm:inline">Habesha Luxury Coach</span>
+    </a>
+    <nav class="hidden gap-8 text-sm md:flex">
+      <a class="hover:text-gold-light" href="#book">Book a seat</a>
+      <a class="hover:text-gold-light" href="#fleet">Fleet</a>
+      <a class="hover:text-gold-light" href="#onboard">Onboard</a>
+      <a class="hover:text-gold-light" href="#classes">Coach classes</a>
+      <a class="hover:text-gold-light" href="#fares">Fares</a>
     </nav>
+    <a href="https://wa.me/254755918468" target="_blank" rel="noopener" class="rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-light">Book on WhatsApp</a>
   </div>
 </header>
 
-<section id="top" class="hero" style="border-bottom:1px solid var(--line);padding:0;">
-  <div class="hero-copy">
-    <div class="eyebrow">NAIROBI ⇄ MOYALE ⇄ ADDIS ABABA</div>
-    <h1>The Kenya–Ethiopia<br>corridor, in <em>gold and comfort.</em></h1>
-    <p>Habesha Luxury Coach runs daily from Nairobi through Isiolo, Marsabit, Sololo and Moyale, with through-service to Dilla, Hawassa and Addis Ababa. Reclining seats, onboard entertainment and a crew that treats the border crossing like routine — because it is.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-gold" href="#fares">See routes &amp; fares</a>
-      <a class="btn btn-outline" href="https://wa.me/254755918468" target="_blank" rel="noopener">Reserve your seat</a>
+<!-- HERO -->
+<section id="top" class="relative isolate flex min-h-[88vh] items-end overflow-hidden">
+  <img src="assets/1001472478.jpg" alt="Habesha Luxury Coach Scania bus, front view" class="absolute inset-0 -z-20 h-full w-full object-cover">
+  <div class="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/55 to-ink/10"></div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink/85 via-ink/30 to-transparent"></div>
+  <div class="mx-auto w-full max-w-6xl px-5 pb-20 pt-40">
+    <h1 class="max-w-3xl font-display text-5xl font-semibold leading-[1.02] tracking-tight text-white md:text-7xl">Overnight from Nairobi to Addis Ababa, in gold-class comfort.</h1>
+    <p class="mt-7 max-w-xl text-lg text-cream/80">Daily departures through Isiolo, Marsabit, Sololo and Moyale, with through-service to Dilla, Hawassa and Addis Ababa. Reclining seats, onboard entertainment and a crew that handles the border for you.</p>
+    <div class="mt-9 flex flex-wrap gap-3">
+      <a href="#book" class="rounded-full bg-gold px-7 py-3.5 font-semibold text-ink transition hover:bg-gold-light">Choose your seat</a>
+      <a href="#fares" class="rounded-full border border-white/30 px-7 py-3.5 font-semibold text-white transition hover:border-gold hover:text-gold-light">See routes and fares</a>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><b>7+</b><span>Stops served</span></div>
-      <div class="stat"><b>2</b><span>Coach classes</span></div>
-      <div class="stat"><b>Daily</b><span>Departures, 7:00&nbsp;PM</span></div>
-      <div class="stat"><b>1</b><span>Border, well handled</span></div>
-    </div>
-  </div>
-  <div class="hero-media">
-    <img src="assets/1001472478.jpg" alt="Habesha Luxury Coach Scania bus, front view, Nairobi to Moyale/Moto Town route">
+    <dl class="mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-white/15 pt-6">
+      <div><dt class="font-display text-2xl text-gold-light md:text-3xl">7:00 PM</dt><dd class="mt-1 text-sm text-cream/60">Departs daily</dd></div>
+      <div><dt class="font-display text-2xl text-gold-light md:text-3xl">8 stops</dt><dd class="mt-1 text-sm text-cream/60">Nairobi to Addis Ababa</dd></div>
+      <div><dt class="font-display text-2xl text-gold-light md:text-3xl">1 border</dt><dd class="mt-1 text-sm text-cream/60">Handled by our crew</dd></div>
+    </dl>
   </div>
 </section>
 
-<div class="ticker-bar" aria-label="Route announcements">
-  <div class="ticker-track" id="tickerTrack">
-    <!-- duplicated in JS for a seamless loop -->
-    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> ISIOLO <span class="fare-pill">KES 1,500</span></span>
-    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> MARSABIT <span class="fare-pill">KES 2,000</span></span>
-    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> SOLOLO <span class="fare-pill">KES 2,200</span></span>
-    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> MOYALE <span class="fare-pill">KES 2,500</span></span>
-    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> DILLA <span class="fare-pill">KES 5,500</span></span>
-    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> HAWASSA <span class="fare-pill">KES 6,500</span></span>
-    <span class="ticker-item">NAIROBI <span class="dot-sep">→</span> ADDIS ABABA <span class="fare-pill">KES 15,000</span></span>
-    <span class="ticker-item">ISIOLO <span class="dot-sep">→</span> MARSABIT <span class="fare-pill">KES 1,000</span></span>
-    <span class="ticker-item">MARSABIT <span class="dot-sep">→</span> SOLOLO <span class="fare-pill">KES 700</span></span>
-    <span class="ticker-item">SOLOLO <span class="dot-sep">→</span> MOYALE <span class="fare-pill">KES 700</span></span>
-    <span class="ticker-item">MOYALE <span class="dot-sep">→</span> DILLA <span class="fare-pill">KES 3,000</span></span>
-    <span class="ticker-item">DILLA <span class="dot-sep">→</span> HAWASSA <span class="fare-pill">KES 1,500</span></span>
-    <span class="ticker-item">HAWASSA <span class="dot-sep">→</span> ADDIS ABABA <span class="fare-pill">KES 1,500</span></span>
-    <span class="ticker-item">Daily departures · 7:00 PM · Book on WhatsApp</span>
-  </div>
+<!-- TICKER -->
+<div class="overflow-hidden border-y border-gold/20 bg-black py-3 text-[13px] text-cream" aria-label="Fares from Nairobi">
+  <div id="ticker" class="flex w-max animate-ticker motion-reduce:animate-none hover:[animation-play-state:paused]"></div>
 </div>
 
-<section id="booking" class="booking-section">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">BOOK &amp; RESERVE</div>
-      <h2>Your ticket, in three steps.</h2>
-      <p>Pick your route, choose a departure, then your seat. We'll draft it all as a WhatsApp message — you just hit send.</p>
+<!-- BOOKING -->
+<section id="book" class="bg-ink py-24">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">Book your seat in three steps.</h2>
+      <p class="mt-4 text-lg text-cream/70">Pick your route, a departure and your seats. We draft the WhatsApp message for you. You just hit send.</p>
     </div>
 
-    <div class="booking-steps">
-      <div class="b-step active"><div class="num">1</div><div class="lbl"><b>Route &amp; date</b><span>Where you're boarding and alighting</span></div></div>
-      <div class="b-step-line"></div>
-      <div class="b-step active"><div class="num">2</div><div class="lbl"><b>Departure</b><span>Confirm the day's coach</span></div></div>
-      <div class="b-step-line"></div>
-      <div class="b-step active"><div class="num">3</div><div class="lbl"><b>Choose your seat</b><span>Pick from the cabin map</span></div></div>
-    </div>
-
-    <div class="booking-panel">
-
-      <div class="b-block">
-        <div class="b-block-head"><span class="tag">01</span><h3>Route &amp; date</h3></div>
-        <div class="b-fields">
-          <div class="b-field">
-            <label for="bFrom">From</label>
-            <select id="bFrom">
-              <option value="Nairobi">Nairobi</option>
-              <option value="Isiolo">Isiolo</option>
-              <option value="Marsabit">Marsabit</option>
-              <option value="Sololo">Sololo</option>
-              <option value="Moyale">Moyale</option>
-              <option value="Dilla">Dilla</option>
-              <option value="Hawassa">Hawassa</option>
-            </select>
-          </div>
-          <div class="b-field">
-            <label for="bTo">To</label>
-            <select id="bTo">
-              <option value="Isiolo">Isiolo</option>
-              <option value="Marsabit">Marsabit</option>
-              <option value="Sololo">Sololo</option>
-              <option value="Moyale">Moyale</option>
-              <option value="Dilla">Dilla</option>
-              <option value="Hawassa">Hawassa</option>
-              <option value="Addis Ababa" selected>Addis Ababa</option>
-            </select>
-          </div>
-          <div class="b-field">
-            <label for="bDate">Travel date</label>
-            <input type="date" id="bDate">
-          </div>
-          <div class="b-field">
-            <label for="bPax">Passengers</label>
-            <select id="bPax">
-              <option>1 passenger</option>
-              <option>2 passengers</option>
-              <option>3 passengers</option>
-              <option>4 passengers</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="b-block">
-        <div class="b-block-head"><span class="tag">02</span><h3>Departure</h3></div>
-        <div class="depart-options" id="departOptions">
-          <div class="depart-card selected" data-time="7:00 PM">
-            <b>7:00 PM</b><span>Evening departure · daily</span>
-          </div>
-          <div class="depart-card" data-time="6:00 AM">
-            <b>6:00 AM</b><span>Morning departure · Nairobi–Isiolo &amp; Marsabit only</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="b-block">
-        <div class="b-block-head"><span class="tag">03</span><h3>Choose your seat(s)</h3></div>
-        <div class="seat-legend">
-          <span class="leg-avail"><i></i> Available</span>
-          <span class="leg-selected"><i></i> Selected</span>
-          <span class="leg-booked"><i></i> Booked</span>
-        </div>
-        <div class="seat-cabin" id="seatCabin"><!-- seats injected by JS --></div>
-        <div style="text-align:center;font-size:12.5px;color:rgba(239,228,200,0.45);margin-top:-14px;margin-bottom:8px;">Tap a seat to select — up to 4 per booking</div>
-      </div>
-
-      <div class="b-summary">
+    <div class="mt-12 grid gap-6 lg:grid-cols-5">
+      <div class="space-y-8 rounded-3xl border border-white/10 bg-char p-7 lg:col-span-3 md:p-9">
         <div>
-          <div class="total-lbl">Selected route</div>
-          <div class="total-val" id="summaryRoute" style="font-size:18px;">Nairobi → Addis Ababa</div>
+          <h3 class="font-display text-xl font-semibold">Route and date</h3>
+          <div class="mt-4 grid gap-4 sm:grid-cols-2">
+            <label class="text-sm font-medium">From<select id="bFrom" class="mt-1.5 w-full rounded-xl border border-white/15 bg-ink [color-scheme:dark] px-3.5 py-3 focus:outline-none focus:ring-2 focus:ring-gold"></select></label>
+            <label class="text-sm font-medium">To<select id="bTo" class="mt-1.5 w-full rounded-xl border border-white/15 bg-ink [color-scheme:dark] px-3.5 py-3 focus:outline-none focus:ring-2 focus:ring-gold"></select></label>
+            <label class="text-sm font-medium">Travel date<input type="date" id="bDate" class="mt-1.5 w-full rounded-xl border border-white/15 bg-ink [color-scheme:dark] px-3.5 py-3 focus:outline-none focus:ring-2 focus:ring-gold"></label>
+            <label class="text-sm font-medium">Passengers<select id="bPax" class="mt-1.5 w-full rounded-xl border border-white/15 bg-ink [color-scheme:dark] px-3.5 py-3 focus:outline-none focus:ring-2 focus:ring-gold"><option>1 passenger</option><option>2 passengers</option><option>3 passengers</option><option>4 passengers</option></select></label>
+          </div>
         </div>
         <div>
-          <div class="total-lbl">Total fare</div>
-          <div class="total-val"><span id="summaryTotal">KES 0</span></div>
-        </div>
-        <a class="btn btn-gold" id="whatsBookBtn" href="https://wa.me/254755918468" target="_blank" rel="noopener">Complete on WhatsApp</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="route-strip">
-  <div class="wrap">
-    <div class="route-track">
-      <div class="route-stop"><div class="dot"></div><b>Nairobi</b><div class="km">Departure · 7:00 PM</div><div class="tag">CBD</div></div>
-      <div class="route-stop"><div class="dot"></div><b>Isiolo</b><div class="km">Key stop</div></div>
-      <div class="route-stop"><div class="dot"></div><b>Marsabit</b><div class="km">Key stop</div></div>
-      <div class="route-stop"><div class="dot"></div><b>Sololo</b><div class="km">Key stop</div></div>
-      <div class="route-stop border"><div class="dot"></div><b>Moyale</b><div class="km">Border crossing</div><div class="tag">KE / ET</div></div>
-      <div class="route-stop"><div class="dot"></div><b>Dilla</b><div class="km">Ethiopia leg</div></div>
-      <div class="route-stop"><div class="dot"></div><b>Hawassa</b><div class="km">Ethiopia leg</div></div>
-      <div class="route-stop"><div class="dot"></div><b>Addis Ababa</b><div class="km">Gateway</div></div>
-    </div>
-  </div>
-</div>
-
-<section id="fleet">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">THE FLEET</div>
-      <h2>Scania chassis. Habesha coachwork.</h2>
-      <p>Every Habesha coach carries the same gold-and-wine livery and the twin-flag crest on the tailgate, from the Nairobi yard to the Moyale border post.</p>
-    </div>
-    <div class="fleet-grid">
-      <div class="fleet-card tall">
-        <img src="assets/1001472471.jpg" alt="Habesha Luxury Coach bus, three-quarter front view, gold and black livery">
-        <div class="cap"><b>Gold Class, on the yard</b>Fresh livery, Nairobi</div>
-      </div>
-      <div class="fleet-card">
-        <img src="assets/1001472475.jpg" alt="Side profile of Habesha Luxury Coach bus showing gold and maroon chevron livery">
-        <div class="cap"><b>Side profile</b>Habesha script, chevron detail</div>
-      </div>
-      <div class="fleet-card">
-        <img src="assets/1001472476.jpg" alt="Rear view of Habesha Luxury Coach bus with Kenya and Ethiopia flag crest">
-        <div class="cap"><b>The tailgate crest</b>Kenya &amp; Ethiopia, one corridor</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="amenities">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">ONBOARD</div>
-      <h2>Comfort built for the long stretch north.</h2>
-      <p>Whether you're going three stops down the road to Isiolo or through to Addis, every seat gets the same standard of care.</p>
-    </div>
-    <div class="amen-grid">
-      <div class="amen"><div class="ic">✓</div><h3>Reclining seats</h3><p>Real legroom and a deep recline for the long haul.</p></div>
-      <div class="amen"><div class="ic">✓</div><h3>Air conditioned</h3><p>Climate control from the Nairobi heat to the highlands.</p></div>
-      <div class="amen"><div class="ic">✓</div><h3>Free WiFi</h3><p>Stay reachable through Marsabit and the Moyale stretch.</p></div>
-      <div class="amen"><div class="ic">✓</div><h3>USB charging</h3><p>A port at every seat, all the way to Addis.</p></div>
-      <div class="amen"><div class="ic">✓</div><h3>Personal entertainment</h3><p>Seat-back screens on our VIP coaches.</p></div>
-      <div class="amen"><div class="ic">✓</div><h3>Guided border crossing</h3><p>Crews who handle the Moyale paperwork daily.</p></div>
-    </div>
-
-    <div class="amenity-photo two-cabins">
-      <div class="cabin-block">
-        <img src="assets/1001472481.jpg" alt="VIP coach interior with cream leather seats and personal entertainment screens">
-        <div class="note">
-          <b>VIP Class cabin</b>
-          <p>Cream leather seating, a personal screen at every headrest, and a crew ready with your bags before you're off the step.</p>
+          <h3 class="font-display text-xl font-semibold">Departure</h3>
+          <div id="departs" class="mt-4 grid gap-3 sm:grid-cols-2">
+            <button type="button" data-time="7:00 PM" class="rounded-2xl border p-4 text-left transition"><b class="block font-display text-lg">7:00 PM</b><span class="text-sm opacity-70">Evening departure, daily</span></button>
+            <button type="button" data-time="6:00 AM" class="rounded-2xl border p-4 text-left transition"><b class="block font-display text-lg">6:00 AM</b><span class="text-sm opacity-70">Morning, Nairobi to Isiolo and Marsabit only</span></button>
+          </div>
         </div>
       </div>
-      <div class="cabin-block">
-        <img src="assets/1001472477.jpg" alt="Standard VIP coach interior with reclining seats, red carpet aisle and curtains">
-        <div class="note">
-          <b>Gold Class cabin</b>
-          <p>Wide reclining seats, a red-carpet aisle and mood lighting for the long stretch between towns.</p>
+
+      <div class="rounded-3xl border border-gold/30 bg-black p-7 text-cream lg:col-span-2 md:p-8">
+        <h3 class="font-display text-xl font-semibold text-gold-light">Choose your seats</h3>
+        <div class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-xs text-cream/65">
+          <span class="flex items-center gap-2"><i class="h-3.5 w-3.5 rounded border border-white/20 bg-char"></i>Available</span>
+          <span class="flex items-center gap-2"><i class="h-3.5 w-3.5 rounded bg-gold"></i>Selected</span>
+          <span class="flex items-center gap-2"><i class="h-3.5 w-3.5 rounded bg-white/10"></i>Booked</span>
+        </div>
+        <div id="cabin" class="mx-auto mt-5 grid max-w-[340px] grid-cols-5 gap-2 rounded-2xl border border-dashed border-white/20 p-4"></div>
+        <p class="mt-3 text-center text-xs text-cream/50">Tap a seat to select. Up to 4 per booking.</p>
+        <div class="mt-6 space-y-4 border-t border-white/10 pt-5">
+          <div class="flex items-end justify-between gap-4">
+            <div><p class="text-xs text-cream/55">Route</p><p id="sRoute" class="font-display text-lg text-white">Nairobi → Addis Ababa</p></div>
+            <div class="text-right"><p class="text-xs text-cream/55">Total fare</p><p id="sTotal" class="font-display text-2xl text-gold-light">KES 0</p></div>
+          </div>
+          <a id="waBtn" href="https://wa.me/254755918468" target="_blank" rel="noopener" class="block rounded-full bg-gold py-3.5 text-center font-semibold text-ink transition hover:bg-gold-light">Complete on WhatsApp</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="classes">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">CHOOSE YOUR COACH</div>
-      <h2>Two ways to travel the corridor.</h2>
-      <p>Every class shares the same route and safety standard — the difference is space, service and privacy.</p>
+<!-- ROUTE -->
+<section class="border-b border-white/10 bg-char py-16">
+  <div class="mx-auto max-w-6xl px-5">
+    <h2 class="font-display text-2xl font-semibold text-white">The route</h2>
+    <div id="route" class="mt-8 flex overflow-x-auto pb-2"></div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section id="fleet" class="py-24">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">Scania chassis. Habesha coachwork.</h2>
+      <p class="mt-4 text-lg text-cream/70">Every coach carries the same gold-and-wine livery and the twin-flag crest on the tailgate, from the Nairobi yard to the Moyale border post.</p>
     </div>
-    <div class="class-grid">
-      <div class="class-card">
-        <div class="class-tag">Standard VIP</div>
-        <h3>Gold Class Coach</h3>
-        <div class="seats">Reclining seats · red carpet cabin</div>
-        <ul>
-          <li>Free WiFi</li>
-          <li>Air conditioning</li>
-          <li>USB charging ports</li>
-          <li>Generous luggage bay</li>
-        </ul>
-        <div class="price">From KES 1,500 <span>/ seat, Nairobi–Isiolo</span></div>
-      </div>
-      <div class="class-card feat">
-        <div class="class-tag">Premium</div>
-        <h3>VIP Sleeper Coach</h3>
-        <div class="seats">Fully flat beds · cream leather cabin</div>
-        <ul>
-          <li>Personal entertainment screen</li>
-          <li>Premium cuisine onboard</li>
-          <li>Lounge-style boarding</li>
-          <li>Priority luggage handling</li>
-        </ul>
-        <div class="price">KES 7,500 <span>/ seat, Nairobi–Addis Ababa</span></div>
-      </div>
-      <div class="class-card">
-        <div class="class-tag">Round trip</div>
-        <h3>Addis Return Fare</h3>
-        <div class="seats">Nairobi ⇄ Addis Ababa</div>
-        <ul>
-          <li>Both legs on Habesha coaches</li>
-          <li>Fixed border-crossing schedule</li>
-          <li>Book both legs on one WhatsApp thread</li>
-          <li>Same standard, there and back</li>
-        </ul>
-        <div class="price">KES 15,000 <span>/ seat, return</span></div>
-      </div>
+    <div class="mt-12 grid gap-4 md:grid-cols-3 md:grid-rows-2">
+      <figure class="relative min-h-[320px] overflow-hidden rounded-3xl md:col-span-2 md:row-span-2"><img src="assets/1001472471.jpg" alt="Habesha Luxury Coach bus, three-quarter front view" class="absolute inset-0 h-full w-full object-cover"><figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-6"><b class="font-display text-xl text-gold-light">Gold Class, on the yard</b><span class="block text-sm text-cream/75">Fresh livery, Nairobi</span></figcaption></figure>
+      <figure class="relative min-h-[200px] overflow-hidden rounded-3xl"><img src="assets/1001472475.jpg" alt="Side profile of the coach with gold and maroon chevron livery" class="absolute inset-0 h-full w-full object-cover"><figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-5"><b class="font-display text-gold-light">Side profile</b></figcaption></figure>
+      <figure class="relative min-h-[200px] overflow-hidden rounded-3xl"><img src="assets/1001472476.jpg" alt="Rear of the coach with Kenya and Ethiopia flag crest" class="absolute inset-0 h-full w-full object-cover"><figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-5"><b class="font-display text-gold-light">The tailgate crest</b></figcaption></figure>
     </div>
   </div>
 </section>
 
-<section id="fares">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">ROUTES &amp; FARES</div>
-      <h2>One corridor, fare by fare.</h2>
-      <p>Fares below are per seat, one way, on the Standard VIP coach. Don't see your exact stop? Send us a WhatsApp message and we'll confirm it directly.</p>
+<!-- ONBOARD -->
+<section id="onboard" class="bg-char py-24">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">Comfort built for the long stretch north.</h2>
+      <p class="mt-4 text-lg text-cream/70">Three stops to Isiolo or all the way to Addis, every seat gets the same standard of care.</p>
     </div>
+    <div id="amen" class="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <div class="mt-16 grid gap-5 md:grid-cols-2">
+      <div class="overflow-hidden rounded-3xl bg-ink"><img src="assets/1001472481.jpg" alt="VIP cabin with cream leather seats and personal screens" class="h-64 w-full object-cover"><div class="p-6"><b class="font-display text-xl text-gold-light">VIP Class cabin</b><p class="mt-2 text-cream/70">Cream leather seating, a personal screen at every headrest, and a crew ready with your bags before you're off the step.</p></div></div>
+      <div class="overflow-hidden rounded-3xl bg-ink"><img src="assets/1001472477.jpg" alt="Gold Class cabin with reclining seats and red carpet aisle" class="h-64 w-full object-cover"><div class="p-6"><b class="font-display text-xl text-gold-light">Gold Class cabin</b><p class="mt-2 text-cream/70">Wide reclining seats, a red-carpet aisle and mood lighting for the long stretch between towns.</p></div></div>
+    </div>
+  </div>
+</section>
 
-    <div class="fares-wrap">
-      <table>
-        <thead>
-          <tr><th>Route</th><th>Departure</th><th>Fare (KES)</th><th></th></tr>
-        </thead>
-        <tbody>
-          <tr class="trunk">
-            <td class="route-name">Nairobi <span class="arrow">→</span> Isiolo</td>
-            <td>7:00 PM</td><td class="fare">1,500</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Nairobi%20to%20Isiolo" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr class="trunk">
-            <td class="route-name">Nairobi <span class="arrow">→</span> Marsabit</td>
-            <td>7:00 PM</td><td class="fare">2,000</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Nairobi%20to%20Marsabit" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr class="trunk">
-            <td class="route-name">Nairobi <span class="arrow">→</span> Sololo</td>
-            <td>7:00 PM</td><td class="fare">2,200</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Nairobi%20to%20Sololo" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr class="trunk">
-            <td class="route-name">Nairobi <span class="arrow">→</span> Moyale</td>
-            <td>7:00 PM</td><td class="fare">2,500</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Nairobi%20to%20Moyale" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr class="trunk">
-            <td class="route-name">Nairobi <span class="arrow">→</span> Dilla</td>
-            <td>7:00 PM</td><td class="fare">5,500</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Nairobi%20to%20Dilla" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr class="trunk">
-            <td class="route-name">Nairobi <span class="arrow">→</span> Hawassa</td>
-            <td>7:00 PM</td><td class="fare">6,500</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Nairobi%20to%20Hawassa" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr class="trunk">
-            <td class="route-name">Nairobi <span class="arrow">→</span> Addis Ababa</td>
-            <td>7:00 PM</td><td class="fare">15,000</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Nairobi%20to%20Addis%20Ababa" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr>
-            <td class="route-name">Isiolo <span class="arrow">→</span> Marsabit</td>
-            <td>7:00 PM</td><td class="fare">1,000</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Isiolo%20to%20Marsabit" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr>
-            <td class="route-name">Marsabit <span class="arrow">→</span> Sololo</td>
-            <td>7:00 PM</td><td class="fare">700</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Marsabit%20to%20Sololo" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr>
-            <td class="route-name">Sololo <span class="arrow">→</span> Moyale</td>
-            <td>7:00 PM</td><td class="fare">700</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Sololo%20to%20Moyale" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr>
-            <td class="route-name">Moyale <span class="arrow">→</span> Dilla</td>
-            <td>7:00 PM</td><td class="fare">3,000</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Moyale%20to%20Dilla" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr>
-            <td class="route-name">Dilla <span class="arrow">→</span> Hawassa</td>
-            <td>7:00 PM</td><td class="fare">1,500</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Dilla%20to%20Hawassa" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-          <tr>
-            <td class="route-name">Hawassa <span class="arrow">→</span> Addis Ababa</td>
-            <td>7:00 PM</td><td class="fare">1,500</td>
-            <td class="book"><a href="https://wa.me/254755918468?text=I'd%20like%20to%20book%20Hawassa%20to%20Addis%20Ababa" target="_blank" rel="noopener">Book now</a></td>
-          </tr>
-        </tbody>
+<!-- CLASSES -->
+<section id="classes" class="py-24">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">Two ways to travel the corridor.</h2>
+      <p class="mt-4 text-lg text-cream/70">Every class shares the same route and safety standard. The difference is space, service and privacy.</p>
+    </div>
+    <div class="mt-12 grid gap-5 lg:grid-cols-3">
+      <article class="flex flex-col rounded-3xl border border-white/10 bg-char p-8">
+        <p class="text-sm text-gold">Standard VIP</p>
+        <h3 class="mt-2 font-display text-2xl text-white">Gold Class Coach</h3>
+        <p class="mt-1 text-sm text-cream/55">Reclining seats, red carpet cabin</p>
+        <ul class="mt-6 divide-y divide-white/10 text-cream/80"><li class="py-2.5">Free WiFi</li><li class="py-2.5">Air conditioning</li><li class="py-2.5">USB charging ports</li><li class="py-2.5">Generous luggage bay</li></ul>
+        <p class="mt-auto pt-8 font-display text-2xl text-gold-light">From KES 1,500 <span class="font-sans text-sm text-cream/50">per seat, Nairobi to Isiolo</span></p>
+      </article>
+      <article class="flex flex-col rounded-3xl bg-gradient-to-br from-wine to-wine-deep p-8 ring-1 ring-gold/60">
+        <p class="text-sm text-gold-light">Premium</p>
+        <h3 class="mt-2 font-display text-2xl text-white">VIP Sleeper Coach</h3>
+        <p class="mt-1 text-sm text-cream/65">Fully flat beds, cream leather cabin</p>
+        <ul class="mt-6 divide-y divide-white/15 text-cream/90"><li class="py-2.5">Personal entertainment screen</li><li class="py-2.5">Premium cuisine onboard</li><li class="py-2.5">Lounge-style boarding</li><li class="py-2.5">Priority luggage handling</li></ul>
+        <p class="mt-auto pt-8 font-display text-2xl text-gold-light">KES 7,500 <span class="font-sans text-sm text-cream/60">per seat, Nairobi to Addis Ababa</span></p>
+      </article>
+      <article class="flex flex-col rounded-3xl border border-white/10 bg-char p-8">
+        <p class="text-sm text-gold">Round trip</p>
+        <h3 class="mt-2 font-display text-2xl text-white">Addis Return Fare</h3>
+        <p class="mt-1 text-sm text-cream/55">Nairobi and Addis Ababa, both ways</p>
+        <ul class="mt-6 divide-y divide-white/10 text-cream/80"><li class="py-2.5">Both legs on Habesha coaches</li><li class="py-2.5">Fixed border-crossing schedule</li><li class="py-2.5">Book both legs in one WhatsApp thread</li><li class="py-2.5">Same standard, there and back</li></ul>
+        <p class="mt-auto pt-8 font-display text-2xl text-gold-light">KES 15,000 <span class="font-sans text-sm text-cream/50">per seat, return</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FARES -->
+<section id="fares" class="bg-char py-24">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">One corridor, fare by fare.</h2>
+      <p class="mt-4 text-lg text-cream/70">Fares are per seat, one way, on the Standard VIP coach. Don't see your exact stop? Message us on WhatsApp and we'll confirm it.</p>
+    </div>
+    <div class="mt-12 overflow-x-auto rounded-3xl border border-white/10 bg-ink">
+      <table class="w-full min-w-[520px] text-left">
+        <thead class="bg-wine-deep font-display text-gold-light"><tr><th class="px-6 py-4 font-semibold">Route</th><th class="px-6 py-4 font-semibold">Departure</th><th class="px-6 py-4 font-semibold">Fare (KES)</th><th class="px-6 py-4"></th></tr></thead>
+        <tbody id="fareRows" class="divide-y divide-white/10"></tbody>
       </table>
     </div>
-    <p class="fares-note">Round trip, Nairobi ⇄ Addis Ababa: KES 15,000 per seat. VIP Sleeper Class (Nairobi–Addis, flat bed, personal TV, premium cuisine, lounge access): KES 7,500 one way. Fares are per seat and subject to change without notice — confirm on WhatsApp before you travel.</p>
+    <p class="mt-5 max-w-3xl text-sm text-cream/55">Round trip, Nairobi to Addis Ababa: KES 15,000 per seat. VIP Sleeper (Nairobi to Addis Ababa, flat bed, personal TV, premium cuisine, lounge access): KES 7,500 one way. Fares are per seat and subject to change without notice. Confirm on WhatsApp before you travel.</p>
   </div>
 </section>
 
-<div class="cta-band">
-  <div class="wrap cta-inner">
-    <h2>Ready to travel the corridor?</h2>
-    <a class="btn btn-gold" href="https://wa.me/254755918468" target="_blank" rel="noopener">Book your seat on WhatsApp</a>
+<!-- CTA -->
+<section class="relative isolate overflow-hidden py-20">
+  <img src="assets/assets_1001472473.jpg" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover">
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-black/95 via-black/85 to-black/95"></div>
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-8 px-5">
+    <h2 class="max-w-md font-display text-3xl font-semibold text-cream md:text-4xl">Ready to travel the corridor?</h2>
+    <a href="https://wa.me/254755918468" target="_blank" rel="noopener" class="rounded-full bg-gold-light px-8 py-4 font-semibold text-ink transition hover:bg-white">Book your seat on WhatsApp</a>
   </div>
-</div>
+</section>
 
-<footer id="contact">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <a href="#top" class="brand"><span class="mark">H</span> Habesha Luxury Coach</a>
-        <p>Daily coach service from Nairobi out to Isiolo, Marsabit, Sololo, Moyale, Dilla, Hawassa and Addis Ababa. Travel in style, arrive in comfort — Wala tahinu, wala tahzanu.</p>
+<footer id="contact" class="py-16">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <a href="#top" class="flex items-center gap-3 font-display text-lg font-semibold text-gold-light"><span class="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-gold-light to-gold text-ink">H</span>Habesha Luxury Coach</a>
+        <p class="mt-4 max-w-xs text-sm text-cream/60">Daily coach service from Nairobi to Isiolo, Marsabit, Sololo, Moyale, Dilla, Hawassa and Addis Ababa. Travel in style, arrive in comfort.</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#fleet">The fleet</a></li>
-          <li><a href="#amenities">Onboard</a></li>
-          <li><a href="#fares">Routes &amp; fares</a></li>
-          <li><a href="#classes">Coach classes</a></li>
-        </ul>
+        <h4 class="font-display text-gold">Explore</h4>
+        <ul class="mt-4 space-y-2 text-sm text-cream/75"><li><a class="hover:text-gold-light" href="#book">Book a seat</a></li><li><a class="hover:text-gold-light" href="#fleet">The fleet</a></li><li><a class="hover:text-gold-light" href="#classes">Coach classes</a></li><li><a class="hover:text-gold-light" href="#fares">Routes and fares</a></li></ul>
       </div>
       <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>WhatsApp: +254 755 918 468</li>
-          <li>Nairobi Office · CBD</li>
-          <li>Moyale Office · Border Post</li>
-          <li>habeshluxurycoach.co.ke</li>
-        </ul>
+        <h4 class="font-display text-gold">Contact</h4>
+        <ul class="mt-4 space-y-2 text-sm text-cream/75"><li>WhatsApp: +254 755 918 468</li><li>Nairobi Office, CBD</li><li>Moyale Office, Border Post</li><li>habeshluxurycoach.co.ke</li></ul>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 Habesha Luxury Coach. All rights reserved.</span>
-      <span>Travel in Style, Arrive in Comfort.</span>
-    </div>
+    <div class="mt-12 flex flex-wrap justify-between gap-2 border-t border-white/10 pt-6 text-xs text-cream/45"><span>© 2026 Habesha Luxury Coach. All rights reserved.</span><span>Travel in Style, Arrive in Comfort.</span></div>
   </div>
 </footer>
 
 <script>
-  // --- Ticker: duplicate items once for a seamless scroll loop ---
-  (function(){
-    var track = document.getElementById('tickerTrack');
-    track.innerHTML += track.innerHTML;
-  })();
+(function(){
+  var W="254755918468";
+  var F=[["Nairobi","Isiolo",1500],["Nairobi","Marsabit",2000],["Nairobi","Sololo",2200],["Nairobi","Moyale",2500],["Nairobi","Dilla",5500],["Nairobi","Hawassa",6500],["Nairobi","Addis Ababa",15000],["Isiolo","Marsabit",1000],["Marsabit","Sololo",700],["Sololo","Moyale",700],["Moyale","Dilla",3000],["Dilla","Hawassa",1500],["Hawassa","Addis Ababa",1500]];
+  var S=["Nairobi","Isiolo","Marsabit","Sololo","Moyale","Dilla","Hawassa","Addis Ababa"];
+  var notes=["Departs 7:00 PM","","","","Border crossing","Ethiopia","Ethiopia","Arrival"];
+  var fares={};F.forEach(function(f){fares[f[0]+"|"+f[1]]=f[2];});
+  var $=function(id){return document.getElementById(id);};
+  var fmt=function(n){return n.toLocaleString("en-US");};
 
-  // --- Booking widget ---
-  (function(){
-    var fares = {
-      "Nairobi|Isiolo": 1500, "Nairobi|Marsabit": 2000, "Nairobi|Sololo": 2200,
-      "Nairobi|Moyale": 2500, "Nairobi|Dilla": 5500, "Nairobi|Hawassa": 6500,
-      "Nairobi|Addis Ababa": 15000, "Isiolo|Marsabit": 1000, "Marsabit|Sololo": 700,
-      "Sololo|Moyale": 700, "Moyale|Dilla": 3000, "Dilla|Hawassa": 1500,
-      "Hawassa|Addis Ababa": 1500
-    };
-    var stopOrder = ["Nairobi","Isiolo","Marsabit","Sololo","Moyale","Dilla","Hawassa","Addis Ababa"];
+  function fareFor(a,b){
+    if(a===b)return null;
+    if(fares[a+"|"+b])return fares[a+"|"+b];
+    var i=S.indexOf(a),j=S.indexOf(b),t=0;
+    if(i<0||j<0||i>=j)return null;
+    for(var k=i;k<j;k++){var l=fares[S[k]+"|"+S[k+1]];if(!l)return null;t+=l;}
+    return t;
+  }
 
-    function fareFor(from, to){
-      if(from === to) return null;
-      var direct = fares[from + "|" + to];
-      if(direct) return direct;
-      // sum consecutive trunk legs along the corridor when no direct fare is listed
-      var i = stopOrder.indexOf(from), j = stopOrder.indexOf(to);
-      if(i === -1 || j === -1 || i >= j) return null;
-      var total = 0, ok = true;
-      for(var k = i; k < j; k++){
-        var leg = fares[stopOrder[k] + "|" + stopOrder[k+1]];
-        if(!leg){ ok = false; break; }
-        total += leg;
-      }
-      return ok ? total : null;
+  // ticker
+  var items=F.map(function(f){return '<span class="flex items-center gap-2 whitespace-nowrap border-r border-white/20 px-7">'+f[0]+' <span class="text-gold">to</span> '+f[1]+' <b class="font-display text-gold-light">KES '+fmt(f[2])+'</b></span>';}).join("");
+  $("ticker").innerHTML=items+items;
+
+  // route
+  $("route").innerHTML=S.map(function(s,i){
+    var last=i===S.length-1,border=i===4;
+    return '<div class="relative min-w-[150px] flex-none pr-6">'+
+      (last?'':'<span class="absolute left-3 right-0 top-[5px] h-px bg-gold/40"></span>')+
+      '<span class="relative block h-3 w-3 rounded-full '+(border?'bg-red-600 ring-4 ring-red-600/25':'bg-gold ring-4 ring-gold/20')+'"></span>'+
+      '<b class="mt-4 block font-display text-lg text-white">'+s+'</b>'+
+      '<span class="text-sm text-cream/55">'+(notes[i]||"Key stop")+'</span></div>';
+  }).join("");
+
+  // amenities
+  var chk='<svg viewBox="0 0 20 20" class="h-5 w-5 flex-none text-gold" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="8.5"/><path d="m6.5 10.2 2.3 2.3 4.7-4.9"/></svg>';
+  $("amen").innerHTML=[["Reclining seats","Real legroom and a deep recline for the long haul."],["Air conditioned","Climate control from the Nairobi heat to the highlands."],["Free WiFi","Stay reachable through Marsabit and the Moyale stretch."],["USB charging","A port at every seat, all the way to Addis."],["Personal entertainment","Seat-back screens on our VIP coaches."],["Guided border crossing","Crews who handle the Moyale paperwork daily."]].map(function(a){
+    return '<div class="flex gap-4">'+chk+'<div><h3 class="font-display text-lg text-white">'+a[0]+'</h3><p class="mt-1 text-sm text-cream/65">'+a[1]+'</p></div></div>';
+  }).join("");
+
+  // fares table
+  $("fareRows").innerHTML=F.map(function(f,i){
+    var msg=encodeURIComponent("I'd like to book "+f[0]+" to "+f[1]);
+    return '<tr class="transition hover:bg-gold/5 '+(i<7?'text-white':'text-cream/80')+'"><td class="px-6 py-4">'+f[0]+' <span class="mx-1 text-gold">to</span> '+f[1]+'</td><td class="px-6 py-4">7:00 PM</td><td class="px-6 py-4 font-display text-gold-light">'+fmt(f[2])+'</td><td class="px-6 py-4 text-right"><a class="text-sm text-gold underline decoration-gold/40 underline-offset-4 hover:text-gold-light" target="_blank" rel="noopener" href="https://wa.me/'+W+'?text='+msg+'">Book now</a></td></tr>';
+  }).join("");
+
+  // booking widget
+  var bFrom=$("bFrom"),bTo=$("bTo"),bPax=$("bPax"),bDate=$("bDate"),cabin=$("cabin"),departs=$("departs");
+  bFrom.innerHTML=S.slice(0,7).map(function(s){return '<option>'+s+'</option>';}).join("");
+  bTo.innerHTML=S.slice(1).map(function(s){return '<option'+(s==="Addis Ababa"?' selected':'')+'>'+s+'</option>';}).join("");
+
+  var picked=[],time="7:00 PM",booked=["A2","B4","C1","D3","E2"],MAX=4;
+  var base="aspect-square rounded-md border text-[11px] flex items-center justify-center transition ";
+  var cls={av:base+"border-white/15 bg-char text-cream/70 hover:border-gold",sel:base+"border-gold bg-gold font-semibold text-ink",bk:base+"cursor-not-allowed border-white/5 bg-white/5 text-cream/25 line-through"};
+
+  "ABCDEFGHIJ".split("").forEach(function(r){
+    for(var c=1;c<=5;c++){
+      var el=document.createElement("button");el.type="button";
+      if(c===3||(r==="J"&&c===5)){el=document.createElement("div");cabin.appendChild(el);continue;}
+      var id=r+c;el.textContent=id;el.dataset.seat=id;
+      if(booked.indexOf(id)>-1){el.className=cls.bk;el.disabled=true;}
+      else{el.className=cls.av;el.addEventListener("click",function(){
+        var s=this.dataset.seat,i=picked.indexOf(s);
+        if(i>-1){picked.splice(i,1);this.className=cls.av;}
+        else{if(picked.length>=MAX)return;picked.push(s);this.className=cls.sel;}
+        update();});}
+      cabin.appendChild(el);
     }
+  });
+  var drv=document.createElement("div");
+  drv.className="flex aspect-square items-center justify-center rounded-md border border-gold font-display text-[10px] text-gold";
+  drv.textContent="DRV";cabin.insertBefore(drv,cabin.children[2]);
 
-    var bFrom = document.getElementById('bFrom');
-    var bTo = document.getElementById('bTo');
-    var bPax = document.getElementById('bPax');
-    var summaryRoute = document.getElementById('summaryRoute');
-    var summaryTotal = document.getElementById('summaryTotal');
-    var whatsBtn = document.getElementById('whatsBookBtn');
-    var seatCabin = document.getElementById('seatCabin');
-    var departOptions = document.getElementById('departOptions');
-
-    var selectedSeats = [];
-    var selectedTime = "7:00 PM";
-    var bookedSeats = ["A2","B4","C1","D3","E2"];
-    var maxSeats = 4;
-
-    function buildSeats(){
-      seatCabin.innerHTML = "";
-      var rowLetters = ["A","B","C","D","E","F","G","H","I","J"];
-      rowLetters.forEach(function(row){
-        for(var col = 1; col <= 5; col++){
-          if(col === 3){
-            var gap = document.createElement('div');
-            gap.className = "seat aisle-gap";
-            seatCabin.appendChild(gap);
-            continue;
-          }
-          if(row === "J" && col === 5){
-            var removed = document.createElement('div');
-            removed.className = "seat aisle-gap";
-            seatCabin.appendChild(removed);
-            continue;
-          }
-          var id = row + col;
-          var el = document.createElement('div');
-          el.className = "seat";
-          el.textContent = id;
-          el.dataset.seat = id;
-          if(bookedSeats.indexOf(id) !== -1){
-            el.classList.add('booked');
-          } else {
-            el.addEventListener('click', function(){
-              var seatId = this.dataset.seat;
-              var idx = selectedSeats.indexOf(seatId);
-              if(idx !== -1){
-                selectedSeats.splice(idx, 1);
-                this.classList.remove('selected');
-              } else {
-                if(selectedSeats.length >= maxSeats) return;
-                selectedSeats.push(seatId);
-                this.classList.add('selected');
-              }
-              updateSummary();
-            });
-          }
-          seatCabin.appendChild(el);
-        }
-      });
-      // driver marker
-      var drv = document.createElement('div');
-      drv.className = "seat driver";
-      drv.textContent = "DRV";
-      seatCabin.insertBefore(drv, seatCabin.children[2]);
-    }
-
-    function updateSummary(){
-      var from = bFrom.value, to = bTo.value;
-      var fare = fareFor(from, to);
-      summaryRoute.textContent = from + " → " + to;
-      if(fare === null){
-        summaryTotal.textContent = "Confirm on WhatsApp";
-      } else {
-        var seatCount = Math.max(selectedSeats.length, 1);
-        summaryTotal.textContent = "KES " + (fare * seatCount).toLocaleString();
-      }
-
-      var pax = bPax.value;
-      var date = document.getElementById('bDate').value || "date to be confirmed";
-      var seatsText = selectedSeats.length ? selectedSeats.join(", ") : "to be assigned";
-      var msg = "Hi Habesha Luxury Coach, I'd like to book " + from + " to " + to +
-        " on " + date + ", departing " + selectedTime + ". Passengers: " + pax +
-        ". Seats: " + seatsText + ".";
-      whatsBtn.href = "https://wa.me/254755918468?text=" + encodeURIComponent(msg);
-    }
-
-    departOptions.addEventListener('click', function(e){
-      var card = e.target.closest('.depart-card');
-      if(!card) return;
-      Array.from(departOptions.children).forEach(function(c){ c.classList.remove('selected'); });
-      card.classList.add('selected');
-      selectedTime = card.dataset.time;
-      updateSummary();
+  function paintDeparts(){
+    Array.prototype.forEach.call(departs.children,function(b){
+      var on=b.dataset.time===time;
+      b.className="rounded-2xl border p-4 text-left transition "+(on?"border-gold bg-gold/10 text-gold-light":"border-white/15 bg-ink hover:border-gold/50");
     });
-
-    [bFrom, bTo, bPax, document.getElementById('bDate')].forEach(function(el){
-      el.addEventListener('change', updateSummary);
-    });
-
-    buildSeats();
-    updateSummary();
-  })();
+  }
+  function update(){
+    var a=bFrom.value,b=bTo.value,f=fareFor(a,b);
+    $("sRoute").textContent=a+" → "+b;
+    $("sTotal").textContent=f===null?"Confirm on WhatsApp":"KES "+fmt(f*Math.max(picked.length,1));
+    var msg="Hi Habesha Luxury Coach, I'd like to book "+a+" to "+b+" on "+(bDate.value||"date to be confirmed")+", departing "+time+". Passengers: "+bPax.value+". Seats: "+(picked.length?picked.join(", "):"to be assigned")+".";
+    $("waBtn").href="https://wa.me/"+W+"?text="+encodeURIComponent(msg);
+  }
+  departs.addEventListener("click",function(e){var c=e.target.closest("button");if(!c)return;time=c.dataset.time;paintDeparts();update();});
+  [bFrom,bTo,bPax,bDate].forEach(function(e){e.addEventListener("change",update);});
+  paintDeparts();update();
+})();
 </script>
-
 </body>
 </html>
